@@ -42,20 +42,24 @@
     #container h1 {
       font-size: 34px;
       letter-spacing: 0;
+      animation: fadeIn 8s ease;
     }
 
     #container span {
       margin-top: 0.1rem;
       user-select: all;
+      animation: fadeIn 10s ease;
     }
 
     #container img {
       width: 30rem;
       margin: 1rem 0;
+      animation: fadeIn 15s ease;
     }
 
     #social {
       display: flex;
+      animation: fadeIn 15s ease;
     }
 
     #social a {
@@ -73,6 +77,15 @@
 
     #social svg:hover path {
       fill: rgb(176, 196, 213, 0.75);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
